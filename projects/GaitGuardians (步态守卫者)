@@ -1,0 +1,29 @@
+# 队名：404
+
+## 1. 项目简介：CatWalk AI Analyzer UI
+本项目专注于为 **Noldus CatWalk XT** 步态分析系统开发一套智能化的分析 UI。通过集成大语言模型（LLM），将复杂的步态原始数据（如 Stride Length, Swing Speed, Regularity Index 等）转化为直观的实验洞察，协助研究人员快速识别动物步态的微小变化与异常模式。
+
+### 核心功能
+* **智能指标解析**：利用 AI 自动提取并总结 CatWalk 实验报告中的核心空间与时间参数。
+* **趋势预测可视化**：通过 UI 界面直观展示步态指标随实验周期的变化趋势。
+* **实验合规性检查**：AI 辅助检查步态轨迹捕捉的完整性，减少因数据质量导致的重复实验。
+* **多维度关联分析**：支持一键分析不同实验组（如对照组 vs 实验组）之间的步态差异显著性。
+
+---
+
+## 2. 核心 Prompt 设计
+为了确保 AI 能够精准理解步态分析的专业逻辑，我们设计了针对性的 Prompt：
+
+> **分析引擎 Prompt：**
+> “你是一位资深的生物行为学数据分析师。你的任务是分析 CatWalk XT 系统导出的步态参数。请重点关注‘步幅长度 (Stride Length)’与‘摆动速度 (Swing Speed)’之间的正相关性，并尝试发现数据中是否存在‘规律性指数 (Regularity Index)’下降的趋势。请以专业、严谨且易于理解的方式输出结论。”
+
+---
+
+## 3. 演示图片/视频
+### 演示图片
+![CatWalk AI Analyzer UI 主界面](https://github.com/Joey0819/NoldusCN-AI-Vibe-2026/images/catwalk_ui_main.png)
+![步态数据趋势分析图](https://github.com/Joey0819/NoldusCN-AI-Vibe-2026/images/catwalk_analysis_chart.png)
+
+### 演示视频
+[点击查看 CatWalk AI Analyzer 操作演示](https://github.com/Joey0819/NoldusCN-AI-Vibe-2026/videos/catwalk_demo)
+
